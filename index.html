@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profiles Portfolio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        header {
+            background-color: #1a365d;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        header h1 {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+        header p {
+            font-size: 15px;
+            color: #cbd5e0;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .profiles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .profile-card {
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            padding: 25px 20px;
+            border: 1px solid #e2e8f0;
+        }
+        .profile-img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            background-color: #2b6cb0;
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px auto;
+            border: 4px solid #ebf8ff;
+        }
+        .profile-card h3 {
+            font-size: 20px;
+            color: #2d3748;
+            margin-bottom: 5px;
+        }
+        .role {
+            color: #3182ce;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        .bio {
+            font-size: 13px;
+            color: #4a5568;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+        .skills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 20px;
+        }
+        .skill-tag {
+            background-color: #edf2f7;
+            color: #2d3748;
+            font-size: 11px;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #3182ce;
+            color: white;
+            text-decoration: none;
+            padding: 8px 18px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+        .btn:hover {
+            background-color: #2b6cb0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1a365d;
+            color: white;
+            font-size: 13px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>University Project Team Profiles</h1>
+        <p>Computer Science Department Portfolio Showcase</p>
+    </header>
+    <div class="container">
+        <div class="profiles-grid">
+            <!-- Profile Card 1 -->
+            <div class="profile-card">
+                <div class="profile-img">F</div>
+                <h3>Faiza Baloch</h3>
+                <p class="role">Frontend Developer</p>
+                <p class="bio">Passionate about web layout design, CSS Grid, and building responsive user interfaces.</p>
+                <div class="skills">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">Grid & Flexbox</span>
+                </div>
+                <a href="#" class="btn">View Profile</a>
+            </div>
+            <!-- Profile Card 3 -->
+            <div class="profile-card">
+                <div class="profile-img">Z</div>
+                <h3>Syeda Zainab</h3>
+                <p class="role">UI/UX Designer</p>
+                <p class="bio">Specializes in wireframing, color theory, and creating interactive user experiences.</p>
+                <div class="skills">
+                    <span class="skill-tag">Figma</span>
+                    <span class="skill-tag">CSS Styling</span>
+                    <span class="skill-tag">Wireframing</span>
+                </div>
+                <a href="#" class="btn">View Profile</a>
+            </div>
+            <!-- Profile Card 4 -->
+            <div class="profile-card">
+                <div class="profile-img">U</div>
+                <h3>senhar qureshi</h3>
+                <p class="role">Database Specialist</p>
+                <p class="bio">Experienced in relational databases, ERD design, and writing optimized SQL queries.</p>
+                <div class="skills">
+                    <span class="skill-tag">MySQL</span>
+                    <span class="skill-tag">Relational DB</span>
+                    <span class="skill-tag">SQL</span>
+                </div>
+                <a href="#" class="btn">View Profile</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2026 Student Team Portfolio | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
